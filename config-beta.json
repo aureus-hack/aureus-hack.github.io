@@ -1,0 +1,492 @@
+{
+  "projectLoadService" : "https://ws.beta.shutterfly.com/services/mobile/photobook-project",
+  "uploadService": "https://uniup.beta.shutterfly.com/services/shutterfly-upload",
+  "sharedProjectLoadService": "https://im1.beta.shutterfly.com/services/mobile/photobook-project/shared/photobooks",
+  "sharedProjectLoadAltService": "https://im1.beta.shutterfly.com/services/mobile/photobook-project/shared/collection/photobooks",
+  "projectSaveService" : "https://api.beta.shutterfly.com/project/mobile/photobook",
+  "projectEventService" : "https://api.beta.shutterfly.com/project/project-event",
+  "extendedPaletteAttributeService" : "https://ws.beta.shutterfly.com/attribute/gphotobook/extpalette/values?displayobjecttype=",
+  "extendedPaletteContentService" : "https://ws.beta.shutterfly.com/attribute/gphotobook/extpalette?type=",
+  "extendedPaletteSearchService" : "https://ws.beta.shutterfly.com/attribute/gphotobook/searchby?keywords=",
+  "extendedPaletteAssetRefService": "https://ws.beta.shutterfly.com/attributes?method=findObjectsAttributes&addAssetRefs=true",
+  "extendedPaletteFavoriteService": "https://ws.beta.shutterfly.com/favorites/",
+  "extendedPaletteFavoriteContentService":"https://ws.beta.shutterfly.com/attribute/gphotobook/extpalette/favorites",
+  "arfRenderPageService": "/imaging/idp/body/sdxml/jpg/jpegResolution=[JPEG_RESOLUTION];jpegQuality=[JPEG_QUALITY];testing=[IS_TESTING];target=PRINT;exportType=jpg;addBleedFrame=true;noBleed=true;",
+  "arfTool": "http://arf.beta.shutterfly.com",
+  "itemPricingService": "https://ws.beta.shutterfly.com/store/itempricingsummary",
+  "fontService": "https://ws.beta.shutterfly.com/content/fonts/css?fontId=",
+  "web2PrintHost": "text.beta.shutterfly.com",
+  "photoccinoHost": "rank.gamma.thislife.com",
+  "photoccinoAPIKey": "917418fa13822ffc168f016937407f2e",
+  "secureApiServer" : "https://api.beta.shutterfly.com",
+  "secureApiKey": "dAGb8WEdM5sMGCRUcsatIoFCHaqsndhJ",
+  "secureApiAuthorization": "ZEFHYjhXRWRNNXNNR0NSVWNzYXRJb0ZDSGFxc25kaEo6TzBrNUgxR044ZjJNQkxSaQ==",
+  "reflyProjectService": "https://projects.beta.shutterfly.com",
+  "apigeeUrl": "https://api2.beta.shutterfly.com",
+  "apiKey": "djOlaaty605xAgYG2jOc9MwuwWtJ8NgG",
+  "cdnServer" : "https://cdn-beta.staticsfly.com",
+  "secureAppServer" : "https://www.beta.shutterfly.com",
+  "bookInitService" : "/initbook/query.sfly",
+  "appServer" : "https://www.beta.shutterfly.com",
+  "magicshopGetBookService":"https://beta-magic.photoccino.com/GetBook?",
+  "magicShopTemplateService":"https://beta-magic.photoccino.com/GetTemplate?",
+  "forgotPassword" : "/secure/password_forgot.jsp",
+  "myShutterfly" : "/home/myshutterfly.sfly",
+  "termsAndConditionsUrl" : "http://shutterfly-inc.com/terms.html",
+  "privacyPolicyUrl" : "http://shutterfly-inc.com/privacy.html",
+  "styleServiceBase" : "https://c1-beta.staticsfly.com",
+  "styleServiceHost" : "c1-beta.staticsfly.com",
+  "docsmith" : {
+    "url": "https://booknode.beta.shutterfly.com",
+    "version" : "0"
+  },
+  "mediaPreferenceService" : "https://media.beta.shutterfly.com/services",
+  "userMediaService": "/user-media",
+  "imageMediaService": "https://ws.beta.shutterfly.com/services/user-media",
+  "procSimpleService": "https://im.beta.shutterfly.com/procsimple",
+  "procServService": "https://im.beta.shutterfly.com/procserv",
+  "help": "https://shutterfly-2.custhelp.com/app/answers/detail/a_id/1654",
+  "chat": "https://shutterfly-2.custhelp.com/app/chat/chat_launch_books",
+  "feedback": "",
+  "afsService": "https://im1.beta.shutterfly.com",
+  "styleAssets": "https://c1-beta.staticsfly.com/asset/fetch",
+  "userInfoService" : "/userXML/query.sfly?command=getSessionUserInfo&version=v2",
+  "userInfoServiceOld" : "/userXML/query.sfly?command=getSessionUserInfo",
+  "convertImagesService": "https://www.beta.shutterfly.com/convertImages/associateImagesWithUser.sfly",
+  "shareService" : "https://ws.beta.shutterfly.com/alacarteshare",
+  "shareUrl" : "https://share.beta.shutterfly.com/action/welcome",
+  "facebookShareUrl" : "http://www.facebook.com/sharer/sharer.php?u=",
+  "pinterestShareUrl" : "http://pinterest.com/pin/create/button/?url=",
+  "sitesShareUrl" : "https://www.beta.shutterfly.com/share/siteshare/start.sfly",
+  "embedShareUrl" : "https://www.beta.shutterfly.com/share/shareout/start.sfly",
+  "myprojectsUrl" : "https://www.beta.shutterfly.com/myProjects/start.sfly",
+  "storeUrl": "https://www.beta.shutterfly.com/store",
+  "clientId": "3b733e76281f3d5e4e2001039aca9312",
+  "env": "beta",
+  "enableNGDebugInfo": "true",
+  "superSimple" : false,
+  "defaults": {
+    "coverSpecId" : "10x10_bk_hard",
+    "coverFinish" : "",
+    "coverBinding": "looseleaf",
+    "minimumImageDPI" : 100,
+    "docsmithConcurrentContentRequests": 2,
+    "maxDelayedPatchCount": "3",
+    "constraints": {
+      "TextAreaCountConstraint": {
+        "rule" : "variable",
+        "pageSpecific": {
+            "inner": "variable"
+        }
+      },
+      "GroupSizeConstraint": {
+        "min": 0,
+        "max": 4
+      },
+      "GroupCountConstraint": {
+        "min": 20,
+        "max": 111
+      },
+      "LayoutAttributesMatchConstraint": {
+        "front": {
+          "usedForAutofill": [true]
+        },
+        "back": {
+          "usedForAutofill": [true]
+        },
+        "spine": {
+          "usedForAutofill": [true]
+        },
+        "title": {
+          "usedForAutofill": [true]
+        },
+        "inner": {
+          "usedForAutofill": [true]
+        }
+      },
+      "LinearDensityConstraint": {
+        "densityPoints": [
+          [20, 1.0],
+          [30, 1.5],
+          [40, 2.0],
+          [50, 2.0],
+          [60, 2.0],
+          [70, 2.0],
+          [80, 2.0],
+          [90, 2.0],
+          [100, 2.0],
+          [125, 2.1],
+          [150, 2.1],
+          [175, 2.1],
+          [200, 2.1],
+          [225, 2.3],
+          [250, 2.3],
+          [300, 2.7],
+          [400, 3.6],
+          [500, 4.5],
+          [600, 5.4],
+          [700, 6.3],
+          [800, 7.2],
+          [900, 8.1],
+          [1000, 9.0]
+        ]
+      },
+      "SpreadConstraint": {
+        "min": 0,
+        "max": 0
+      }
+    },
+    "logLevel": "INFO",
+    "logErrorsAsCritical": "true",
+    "logUrl": "/application/silver.gif",
+    "maxAllowedImages" : 1000,
+    "maxAllowedImagesForIE10" : 500,
+    "uploadThreads" : 2,
+    "maxErrorLogs" : 100,
+    "maxPages" : 111,
+    "minPages" : 20,
+    "undoLimitLength" : 20,
+    "autoSaveTimer" : 600000,
+    "sessionIdleTimeout" : 1800000,
+    "initialAutoSaveTimer": 120000,
+    "uppImageUpdatedExceededTimer" : 30000,
+    "zoomFactor": 1,
+    "autofillMinImages" : 3,
+    "autofillMaxImages" : 300,
+    "allowAnonymousUploads" : true,
+    "paletteMode": "dual",
+    "language": "en",
+    "hideUsed": true,
+    "highlights": false,
+    "hideStoryboardIntro": false,
+    "hideCustomizeIntro": false,
+    "hideArrangeIntro": false,
+    "ranIntroTour": false,
+    "loadUppOnStart": true,
+    "startupMode": "prompt",
+    "allowAnonymousUpload": false,
+    "hoverDelay": 1000,
+    "productMode": "book",
+    "tourOnStart": "true",
+    "forceTourOnStart": "false",
+    "startupTab": "edit",
+    "uppLocalImageSizeLimit": {
+      "width": 500,
+      "height": 500
+    },
+    "innerMarginPx": 8,
+    "initialAutofill": true,
+    "useUniversalStylesOnly": false,
+    "passiveMode": false,
+    "photoccinoGetRankBatchSize": 20,
+    "patchSaveInterval" : 600000
+  },
+  "superSimpleDefaults": {
+    "desktop": {
+      "constraints": {
+        "GroupCountConstraint": {
+          "min": 20,
+          "max": 111
+        },
+        "SpreadConstraint": {
+          "min": 100,
+          "max": 100
+        },
+        "LinearDensityConstraint": {
+          "densityPoints": [
+            [20, 1.0],
+            [30, 1.5],
+            [40, 2.0],
+            [50, 2.0],
+            [60, 2.0],
+            [70, 2.0],
+            [80, 2.0],
+            [90, 2.0],
+            [100, 2.0],
+            [125, 2.1],
+            [150, 2.1],
+            [175, 2.1],
+            [200, 2.1]
+          ]
+        }
+      },
+      "photoSelection": {
+        "max": 200,
+        "min": 20
+      }
+    },
+    "phone": {
+      "constraints": {
+        "layoutCategory": "universal",
+        "GroupCountConstraint": {
+          "min": 20,
+          "max": 40
+        },
+        "LinearDensityConstraint": {
+          "densityPoints": [
+            [20, 1.0],
+            [30, 1.0],
+            [40, 1.0]
+          ]
+        }
+      },
+      "photoSelection": {
+        "max": 40,
+        "min": 20
+      }
+    },
+    "tablet": {
+      "constraints": {
+        "GroupCountConstraint": {
+          "min": 20,
+          "max": 111
+        },
+        "SpreadConstraint": {
+          "min": 100,
+          "max": 100
+        },
+        "LayoutAttributesMatchConstraint": {
+        },
+        "LinearDensityConstraint": {
+          "densityPoints": [
+            [20, 1.0],
+            [30, 1.5],
+            [40, 2.0],
+            [50, 2.0],
+            [60, 2.0],
+            [70, 2.0],
+            [80, 2.0],
+            [90, 2.0],
+            [100, 2.0],
+            [125, 2.1],
+            [150, 2.1],
+            [175, 2.1],
+            [200, 2.1]
+          ]
+        },
+        "ImageCountConstraint": {
+          "match": "exact_match",
+          "fallback": "fallback_any_layout"
+        },
+        "TextAreaCountConstraint": {
+          "rule" : "variable",
+          "pageSpecific": {
+            "back": "none"
+          }
+        }
+      },
+      "photoSelection": {
+        "maxPerSpread": 6,
+        "max": 200,
+        "min": 20
+      },
+      "coverLayouts": {
+        "front": "10x10hard_universal_02_00L00P08S_a_frontcover"
+      }
+    }
+  },
+  "features": {
+    "promptOnExit": "true",
+    "switchLanguage": "false",
+    "afsMode": "client",
+    "startWithFrontCover": "true",
+    "allowAutoSave": "true",
+    "allowHotKeys": "true",
+    "switchPalettes": "false",
+    "arrange": "true",
+    "customize": "true",
+    "advancedText": "true",
+    "upsell": "true",
+    "upsell_hardCover": "true",
+    "upsell_matteFinish": "true",
+    "upsell_dustJacket": "true",
+    "upsell_layflat": "true",
+    "upsell_hingedLayflat": "true",
+    "upsell_glossyPaper": "true",
+    "upsell_keepsakePocket": "true",
+    "hardCover": "true",
+    "stockCovers": "true",
+    "premiumCovers": "true",
+    "matteFinish": "true",
+    "dustJacket": "true",
+    "keepsakePocket": "true",
+    "storyboard": "true",
+    "smartStoryboard": "true",
+    "tour": "true",
+    "softRender": "true",
+    "embellishments": "true",
+    "realPictureAsBackground": "true",
+    "spreads": "true",
+    "debug_frequentProjectValidation": "true",
+    "advancedArrange": "true",
+    "styleDialog": "true",
+    "extendedPalette": "true",
+    "slideshow": "@@feature_slideshow",
+    "playButton": "false",
+    "clearAutofillPrompt": "true",
+    "richSubtypes": "true",
+    "photoccinoSuggestedCrop": "true",
+    "preview": "true",
+    "highlightsFeature": "false",
+    "textSettings": "true",
+    "applyToOtherPages": "true",
+    "disableAutofill": "false",
+    "zoom": "true",
+    "editSubMenu1": "true",
+    "removeAddPage": "",
+    "removeRemovePage": "",
+    "hidePages": false,
+    "removeAllEmbellishments": "true",
+    "autoSwitchLanguage": "true",
+    "importPage": "true",
+    "baconV2": "true",
+    "exportToPDF": "true",
+    "calendarSinglePalette": "false",
+    "groupDuplicates": "true",
+    "saveErrorGuard": "true",
+    "clusterStoryboard": "true",
+    "helpOverlay": "false",
+    "advancedEventsTab": "true",
+    "whatsNewTour": "false",
+    "previewText": "true",
+    "virtualAssets": "false",
+    "fade": "true",
+    "saveJPG": "true",
+    "photoArea": "true",
+    "pinterest":"false",
+    "legacySave": "false",
+    "incrementalSave": "true",
+    "sessionHeartbeat": "false",
+    "saveOnConversion": "true",
+    "magicShopProduct": "true",
+    "eventImageFix": "true",
+    "eventsPalette": "true",
+    "vividPicsEnabled": "true",
+    "newNav": "true"
+  },
+  "documentDomain": "www.beta.shutterfly.com",
+  "productTitle": "",
+  "appStoreLinks": {
+    "ipad": {
+      "mercury": "http://hastrk2.com/serve?action=click&publisher_id=27376&site_id=27984&offer_id=255056&advertiser_sub_publisher=SFLY_PBIPAD_PBSLIDESHOW&advertiser_sub_campaign=SFLY_PBIPAD_PBSLIDESHOW"
+    },
+    "iphone": {
+      "voyager": "https://itunes.apple.com/app/id983085413",
+      "apollo": "",
+      "ranger": ""
+    }
+  },
+
+  "pb": {
+    "product": "pb",
+    "styleCatalog": "//www.beta.shutterfly.com/custom-path/stylecatalog.sfly?styleSelector",
+    "removeAddPage": "no",
+    "removeRemovePage": "no",
+    "productTitle": "Shutterfly | Photo Books",
+    "pricingService": "https://ws.beta.shutterfly.com/photobookprice",
+    "globalContentService" : "https://im1.beta.shutterfly.com/content/photobook/globalcontent/s2",
+    "feedback" : "https://www.surveymonkey.com/s/XX7KTXT",
+    "horizSurfacesInView": 2,
+    "defaults": {
+      "styleId": "1103",
+      "styleVersion" : "244"
+    },
+    "features": {
+      "calendarSinglePalette": false,
+      "hingedLayflat": "true",
+      "styleTab": false
+    }
+  },
+  "ss": {
+    "productTitle": "Shutterfly | Collage Editor",
+    "pricingService": "https://ws.beta.shutterfly.com/photobookprice",
+    "globalContentService" : "https://im1.beta.shutterfly.com/content/photobook/globalcontent/s2",
+    "feedback" : "https://www.surveymonkey.com/s/XX7KTXT",
+    "defaults": {
+      "logUrl": "/application/silver.gif",
+      "initialAutofill": "false",
+      "styleId": "5082",
+      "styleVersion" : "1",
+      "sizeId": "8x11",
+      "coverSpecId" : "8x11_bk_hard",
+      "productMode": "editor"
+    },
+    "features": {
+      "superSimple": false,
+      "disableAutofill": true,
+      "tour": false,
+      "spreads": false,
+      "upsell": false,
+      "removeAllEmbellishments": false,
+      "applyToOtherPages":false,
+      "disableMobile": true,
+      "disableTablet": true,
+      "disableDevConsoleItems": true,
+      "shouldBeginInCustomizeMode": false,
+      "calendarSinglePalette": false,
+      "styleTab": false,
+      "textSettings": false,
+      "exportToPDF": false,
+      "whatsNewTour": false,
+      "canvas": false,
+      "newNav": false
+    }
+  },
+  "gc": {
+    "product": "gc",
+    "styleCatalog": "//www.beta.shutterfly.com/calendar-styles/embed/",
+    "removeAddPage": "yes",
+    "removeRemovePage": "yes",
+    "hidePages": true,
+    "help": "https://shutterfly-2.custhelp.com/app/answers/detail/a_id/1779",
+    "eventsService": "https://api.beta.shutterfly.com/calendarevents",
+    "productTitle": "Shutterfly | Calendars",
+    "pricingService": "https://ws.beta.shutterfly.com/calendarprice",
+    "globalContentService" : "https://im1.beta.shutterfly.com/content/calendar/globalcontent",
+    "feedback" : "https://www.surveymonkey.com/r/35W882C",
+    "calendarSinglePalette": false,
+    "horizSurfacesInView": 1,
+    "defaults": {
+      "logUrl": "/application/groundhog.gif",
+      "initialAutofill": "false",
+      "styleId": "5190",
+      "styleVersion" : "1",
+      "sizeId": "12x12",
+      "gridRects": {
+          "12x12": {
+              "//": "baked-in: left, top: -7.2 bleed",
+              "left": 53.8,
+              "top": 186.8
+          },
+          "8x11": {
+              "//": "baked-in: left: -9 bleed, top: -7.2 bleed",
+              "left": 40.12,
+              "top": 127.44
+          }
+      }
+    },
+    "features": {
+      "calendarV2":"true",
+      "clearAutofillPrompt": false,
+      "promptForStoryboard": true,
+      "disableMobile": true,
+      "disableTablet": true,
+      "superSimple": false,
+      "disableAutofill": true,
+      "initialAutofill": false,
+      "tour": true,
+      "spreads": false,
+      "upsell": false,
+      "styleDialog": false,
+      "removeAllEmbellishments": false,
+      "applyToOtherPages":false,
+      "exportToPDF": false,
+      "disableDevConsoleItems": true,
+      "switchPalettesEnabledForCalendars": false,
+      "smartStoryboard": false,
+      "saveJPG": false,
+      "changeStartDate": "true",
+      "migrateEvents": "true"
+    }
+  }
+}

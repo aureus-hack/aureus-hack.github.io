@@ -1,5 +1,164 @@
-<html>
-<body>
-Hello world!
-</body>
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script>
+      window.galleon = {buildNumber:'14315', timeStamp: '2016-11-09_09-39-45', commit: 'a52d584274f8e4eb2a4129675f5eaaa74d1f9141', uuid: '35aef8d8-b7fd-47f9-ae92-c8435d8f29a8', ref: 'origin/aureus-hack', startTime: new Date().getTime()};
+    </script>
+    <title>Shutterfly</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="pinterest" content="nopin">
+    <link rel="dns-prefetch" href="https://cmd.shutterfly.com">
+    <link rel="dns-prefetch" href="https://im1.shutterfly.com">
+    <link rel="dns-prefetch" href="https://ws.shutterfly.com">
+    <link rel="dns-prefetch" href="https://os.shutterfly.com">
+    <link rel="dns-prefetch" href="https://booknode.shutterfly.com">
+    <link rel="dns-prefetch" href="https://c1.staticsfly.com">
+    <link rel="dns-prefetch" href="https://c2.staticsfly.com">
+    <link rel="dns-prefetch" href="https://c3.staticsfly.com">
+    <link rel="dns-prefetch" href="https://c4.staticsfly.com">
+    <link rel="dns-prefetch" href="https://ajax.googleapis.com">
+
+    <link rel="stylesheet" href="//cdn-beta.staticsfly.com/css/fonts/fonts.css">
+    <link rel="stylesheet" href="assets/main.css"/>
+    <!-- The inline css below this must stay in the index file due to crossdomain SVG issues in Firefox. -->
+    <style type="text/css">
+      .feature-afsMode-client img.AFS-BlackWhite,
+      .feature-afsMode-client div.AFS-BlackWhite img {
+        -webkit-filter: url('#BlackWhite');
+        -o-filter: url('#BlackWhite');
+        -ms-filter: url('#BlackWhite');
+        filter: url('#BlackWhite');
+        -webkit-filter: url('#webkit-BlackWhite-1') url('#webkit-BlackWhite-2');
+      }
+      .feature-afsMode-client img.AFS-Sepia,
+      .feature-afsMode-client div.AFS-Sepia img {
+        -webkit-filter: url('#Sepia');
+        -o-filter: url('#Sepia');
+        -ms-filter: url('#Sepia');
+        filter: url('#Sepia');
+        -webkit-filter: grayscale(100%) url('#webkit-Sepia');
+      }
+      .feature-afsMode-client img.AFS-Sunshine,
+      .feature-afsMode-client div.AFS-Sunshine img {
+        -webkit-filter: url('#Sunshine');
+        -o-filter: url('#Sunshine');
+        -ms-filter: url('#Sunshine');
+        filter: url('#Sunshine');
+      }
+      .feature-afsMode-client img.AFS-Vibrant,
+      .feature-afsMode-client div.AFS-Vibrant img {
+        -webkit-filter: url('#Vibrant');
+        -o-filter: url('#Vibrant');
+        -ms-filter: url('#Vibrant');
+        filter: url('#Vibrant');
+      }
+      .feature-afsMode-client img.AFS-Vintage,
+      .feature-afsMode-client div.AFS-Vintage img {
+        -webkit-filter: url('#Vintage');
+        -o-filter: url('#Vintage');
+        -ms-filter: url('#Vintage');
+        filter: url('#Vintage');
+      }
+      img.AFS-Fade,
+      div.AFS-Fade img {
+        background-color: #FFFFFF;
+        opacity: 0.3;
+      }
+      @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+        .feature-afsMode-client img.AFS-BlackWhite,
+        .feature-afsMode-client div.AFS-BlackWhite img {
+          filter: url('#BlackWhite');
+          -webkit-filter: url('#BlackWhite');
+        }
+      }
+    </style>
+  </head>
+
+  <body sf-touch-detect="" sf-message-events="">
+    <!-- Add your site or application content here -->
+    <div help-overlay="showHelp" ng-view="" id="sf-galleon-app-container" class="app-container feature-afsMode-{{::ctrls.MainCtrl.config.afsMode}} product-{{::ctrls.MainCtrl.config.product}}" ng-class="{'in-tour-mode': ctrls.MainCtrl.inTourMode, 'super-small-phone-height': ctrls.MainCtrl.isSuperSmallPhoneMode}"></div>
+    <div class="hide" ng-controller="IntroTourCtrl"></div>
+    <div class="loading"><div class="loading-text">Loading...</div></div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      $(window).load(function() {
+        $(".loading").hide();
+      })
+    </script>
+
+    <script src="//cdn-beta.staticsfly.com/js/lib/sitecatalyst/s_code.js?noDocumentDomain=true"></script>
+    <script src="//cdn-beta.staticsfly.com/js/lib/sitecatalyst/s_code_wrapper.js"></script>
+    <!-- Below script initializes omniture data, included here because score.js depends on it for omniture tracking -->
+    <script type="text/javascript">
+      if (window.scw)
+        window.scw.userAgent = navigator.userAgent;
+    </script>
+    <script src="//www.beta.shutterfly.com/score/score.js?noDocumentDomain=true"></script>
+    <script src="//cdn.staticsfly.com/afs/afs-min-1.0.26.js"></script>
+
+    <script src="scripts/modules.app.js"></script>
+
+    <script src="scripts/app.js"></script>
+
+<!-- <script src="scripts/optional.pdf.app.js"></script> -->
+
+<!-- <script src="scripts/optional.customize.app.js"></script> -->
+
+    <!-- SOASTA Real User Monitoring -->
+    <script>
+      (function(){
+        if(window.BOOMR && window.BOOMR.version){return;}
+        var dom,doc,where,iframe = document.createElement('iframe');
+        iframe.src = "javascript:false";
+        iframe.title = ""; iframe.role="presentation";
+        (iframe.frameElement || iframe).style.cssText = "width:0;height:0;border:0;display:none;";
+        where = document.getElementsByTagName('script')[0];
+        where.parentNode.insertBefore(iframe, where);
+
+        try {
+          doc = iframe.contentWindow.document;
+        } catch(e) {
+          dom = document.domain;
+          iframe.src="javascript:var d=document.open();d.domain='"+dom+"';void(0);";
+          doc = iframe.contentWindow.document;
+        }
+        doc.open()._l = function() {
+          var js = this.createElement("script");
+          if(dom) this.domain = dom;
+          js.id = "boomr-if-as";
+          js.src = '//c.go-mpulse.net/boomerang/' +
+                  'L36VQ-JFTDE-3P6NR-B6Q8U-8ZNC6';
+          BOOMR_lstart=new Date().getTime();
+          this.body.appendChild(js);
+        };
+        doc.write('<body onload="document._l();">');
+        doc.close();
+      })();
+    </script>
+
+    <!-- ClickTale integration  -->
+    <script async="" type="text/javascript">
+      if (!bowser.msie && !bowser.msedge) {
+        console.log("load clicktale")
+        document.write(unescape("%3Cscript%20src='" +
+                (document.location.protocol == 'https:' ?
+                        "https://cdnssl.clicktale.net/www08/ptc/27e69756-bbb1-4b0f-9fe9-5fd81dda0f8b.js" :
+                        "http://cdn.clicktale.net/www08/ptc/27e69756-bbb1-4b0f-9fe9-5fd81dda0f8b.js") + "'%20type='text/javascript'%3E%3C/script%3E"));
+      }
+    </script>
+    <!-- (end of) ClickTale integration  -->
+
+    <!-- MJP: needed when we enable pinterest sharing <script async defer src="//assets.pinterest.com/js/pinit.js"></script> -->
+  </body>
 </html>
